@@ -9,7 +9,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'https://booking-calendar-backend.onrender.com',
+        target: 'https://booking-calendar-backend.onrender.com/api',
         changeOrigin: true,
         secure: false,
       },
