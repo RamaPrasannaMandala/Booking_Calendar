@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://68bd44ba288d1371fb8cb294--booking-calendar-2709.netlify.app/',
+  origin: process.env.FRONTEND_URL || 'https://68bd44ba288d1371fb8cb294--booking-calendar-2709.netlify.app',
   credentials: true
 }));
 app.use(express.json());
