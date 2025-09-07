@@ -1,0 +1,33 @@
+frontend/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+├── src/
+│   ├── assets/
+│   │   └── logo.png
+│   ├── components/
+│   │   ├── Auth/
+│   │   │   └── AuthContainer.jsx
+│   │   ├── Common/
+│   │   │   ├── AppointmentForm.jsx
+│   │   │   ├── BookingForm.jsx
+│   │   │   └── CalendarGrid.jsx
+│   │   ├── Dashboard/
+│   │   │   ├── AppointmentsList.jsx
+│   │   │   └── MainCalendar.jsx
+│   │   ├── Modals/
+│   │   │   ├── ConfirmationModal.jsx
+│   │   │   └── ShareModal.jsx
+│   │   ├── Availability/
+│   │   │   └── AvailabilitySettings.jsx
+│   │   ├── Shared/
+│   │   │   └── SharedCalendarView.jsx
+│   ├── App.jsx
+│   ├── CalendarApp.jsx
+│   ├── main.jsx
+│   ├── styles.css
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── .env

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the appointment calendar */
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		line-height: 1.6;
+	}
+}
+
+@layer components {
+	/* Custom button styles */
+	.btn {
+		@apply px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center gap-2;
+	}
+
+	.btn-primary {
+		@apply bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 hover:transform hover:-translate-y-0.5 hover:shadow-lg;
+	}
+
+	.btn-secondary {
+		@apply bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 hover:transform hover:-translate-y-0.5;
+	}
+
+	/* Custom form styles */
+	.form-input {
+		@apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-base transition-all focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-100;
+	}
+
+	/* Custom modal styles */
+	.modal-overlay {
+		@apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4;
+	}
+
+	.modal-content {
+		@apply bg-white rounded-2xl max-w-md w-full shadow-2xl;
+	}
+}
